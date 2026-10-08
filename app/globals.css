@@ -75,7 +75,7 @@ h1 { font-size: clamp(34px, 3.3vw, 49px); line-height: 1.65; font-weight: 400; l
 @media (prefers-reduced-motion: reduce) { .blog-card-link:hover img { transform: none; } }
 
 /* Coupon lottery */
-.lottery-trigger { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 10px 15px; border: 1px solid #b99164; border-radius: 8px; background: #e4c19a; color: #33242c; font: inherit; white-space: nowrap; cursor: pointer; }
+.lottery-trigger { position: fixed; right: calc(24px + env(safe-area-inset-right, 0px)); bottom: calc(24px + env(safe-area-inset-bottom, 0px)); z-index: 40; box-shadow: 0 8px 28px #160e2b40; display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 10px 15px; border: 1px solid #b99164; border-radius: 8px; background: #e4c19a; color: #33242c; font: inherit; font-size: 14px; min-height: 52px; white-space: nowrap; cursor: pointer; }
 .lottery-trigger:hover { background: #f1d5b3; }
 .lottery-modal { position: fixed; inset: 0; margin: auto; width: min(480px, calc(100vw - 32px)); max-height: calc(100dvh - 32px); overflow-y: auto; overscroll-behavior: contain; padding: 48px 30px 26px; background: var(--background); color: var(--foreground); border: 1px solid #bb946d; border-radius: 16px; box-shadow: 0 28px 100px #120c2466; text-align: center; }
 .lottery-modal::backdrop { background: #1c122bcc; backdrop-filter: blur(5px); }
@@ -99,7 +99,7 @@ h1 { font-size: clamp(34px, 3.3vw, 49px); line-height: 1.65; font-weight: 400; l
 button:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 @media (max-width: 1050px) { .site-header nav { gap: 16px; } }
 @media (max-width: 800px) { .site-header { flex-wrap: wrap; padding-block: 16px; gap: 12px; }.site-header nav { width: 100%; flex-wrap: wrap; justify-content: space-between; gap: 8px 14px; } }
-@media (max-width: 480px) { .lottery-trigger { width: 100%; }.lottery-modal { padding: 48px 20px 22px; }.lottery-modal h2 { font-size: 22px; } }
+@media (max-width: 480px) { .lottery-trigger { width: auto; right: calc(16px + env(safe-area-inset-right, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); font-size: 13px; }.lottery-modal { padding: 48px 20px 22px; }.lottery-modal h2 { font-size: 22px; } }
 @media (prefers-reduced-motion: reduce) { .lottery-result--drawing .lottery-symbol { animation: none; } }
 
 /* A personal welcome shared across all routes. */
@@ -148,3 +148,13 @@ button:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 .newsletter-error { color: #f4b9ac; font-size: 12px; line-height: 1.8; min-height: 22px; margin: 8px 0 0; }.newsletter-success { color: var(--gold); font-size: 14px; line-height: 1.9; }.newsletter-success:has(strong) { margin-block: 12px; padding: 16px 18px; border: 1px solid #b9916455; border-radius: 8px; background: #ffffff06; }.newsletter-success p { color: #d2bdb5; font-size: 13px; margin: 4px 0 0; }.newsletter-reset { display: inline-block; min-height: 44px; padding: 8px 0; background: transparent; border: 0; color: var(--gold); font-size: 12px; text-decoration: underline; text-underline-offset: 4px; cursor: pointer; }.newsletter-notice { font-size: 11px; color: #c4ada1; line-height: 1.9; margin: 10px 0 0; }
 @media (max-width: 1050px) { .newsletter { gap: 35px; }.newsletter-fields { flex-direction: column; } }
 @media (max-width: 700px) { .newsletter { grid-template-columns: 1fr; gap: 28px; padding-block: 40px 35px; }.newsletter-copy h2 { font-size: 27px; } }
+
+/* The daily draw is the homepage's primary action. */
+.hero-daily-action { margin-top: 26px; }
+.hero-daily-button { display: inline-flex; min-height: 64px; min-width: 280px; gap: 20px; justify-content: space-between; padding: 18px 26px; border: 1px solid #f3d7b4; border-radius: 10px; font-size: 18px; font-weight: 600; box-shadow: 0 8px 28px #e4c19a20; }
+.hero-daily-button > span:first-child { font-size: 26px; font-weight: 400; line-height: 1; }
+.hero-daily-action p { color: #d2bdb5; font-size: 12px; line-height: 1.8; margin: 12px 0 0; }
+@media (max-width: 700px) { .hero-daily-button { width: 100%; min-width: 0; }.hero-daily-action { margin-top: 22px; } }
+
+/* Leave space below footer links for the floating lottery button. */
+.site-footer { padding-bottom: calc(88px + env(safe-area-inset-bottom, 0px)); }

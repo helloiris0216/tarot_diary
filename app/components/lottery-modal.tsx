@@ -66,7 +66,7 @@ export default function LotteryModal() {
   return (
     <>
       <button ref={triggerRef} className="lottery-trigger" type="button" onClick={openModal} aria-haspopup="dialog">
-        <span aria-hidden="true">✧</span> 抽優惠券
+        <span aria-hidden="true">✧</span> 抽出我的小幸運
       </button>
       <dialog ref={dialogRef} className="lottery-modal" aria-labelledby="lottery-title" aria-describedby="lottery-description" onClose={handleClose}
         onClick={(event) => {

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import LotteryModal from "./lottery-modal";
 
 export default function Header() {
   return (
@@ -17,7 +16,6 @@ export default function Header() {
           <Link className="nav-cta" href="/#notes">
             今日提問 <span aria-hidden="true">↗</span>
           </Link>
-          <LotteryModal />
         </nav>
       </header>
     </div>

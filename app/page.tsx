@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Header from "./components/header";
+import DailyCardCta from "./components/daily-card-cta";
 import Footer from "./components/footer";
 import Parallax from "./components/parallax";
 import sources from "@/public/images/sources.json";
@@ -24,8 +25,8 @@ export default function Home() {
         <div className="night-section"><section className="hero shell" aria-labelledby="hero-title">
           <div className="hero-copy"><p className="eyebrow"><span className="status-dot" /> A QUIET MOMENT, JUST FOR YOU.</p>
             <h1 id="hero-title">翻開一張牌，<br />也翻開<span className="serif-emphasis">今天的自己。</span></h1>
+            <DailyCardCta />
             <p className="hero-description">一本關於塔羅、直覺與生活的日記。<br />把匆忙放在一旁，留一點時間，聽聽心裡的聲音。</p>
-            <a className="button" href="#notes">開始今天的練習 <span aria-hidden="true">↗</span></a>
             <div className="hero-footnote"><span>THE ART OF LOOKING INWARD</span><span>塔羅・書寫・日常</span></div>
           </div>
           <figure className="tarot-hero-photo"><div className="hero-image-frame" data-parallax><Image src="/images/tarot-02.jpg" alt={imageDescriptions[2]} fill priority sizes="(max-width: 700px) 90vw, 45vw" /></div><figcaption><span>THE TAROT JOURNAL</span><span>A little closer to yourself.</span></figcaption></figure>
