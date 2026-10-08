@@ -22,6 +22,7 @@ a:focus-visible, summary:focus-visible { outline: 2px solid #ba8856; outline-off
 .masthead { background: var(--night); color: var(--cream); }
 .site-header { min-height: 100px; display: flex; align-items: center; justify-content: space-between; gap: 24px; border-bottom: 1px solid #ffffff24; }
 .wordmark { display: inline-flex; align-items: baseline; font-family: Georgia, serif; font-size: 49px; font-weight: bold; letter-spacing: -3px; line-height: 1; }
+.wordmark-space { letter-spacing: -2px; white-space: nowrap; }
 .brand-dot { color: var(--gold); }.brand-caption { margin-left: 22px; font: 10px Arial, sans-serif; letter-spacing: 2px; }
 nav { display: flex; align-items: center; gap: 32px; font-size: 13px; }nav a { min-height: 44px; display: inline-flex; align-items: center; transition: color .2s; }nav a:hover { color: var(--gold); }
 .nav-cta { border-bottom: 1px solid #ba9270; }.nav-cta span { margin-left: 20px; }

@@ -6,8 +6,8 @@ export default function Footer() {
       <div className="shell">
         <NewsletterSignup />
         <div className="footer-top">
-          <a className="wordmark" href="#top" aria-label="回到塔羅牌日記頂端">
-            iris<span className="brand-dot">.</span>
+          <a className="wordmark wordmark-space" href="#top" aria-label="回到 Iris Space 頂端">
+            Iris Space
           </a>
           <p>
             慢慢感受，慢慢成為自己。<br />
@@ -18,7 +18,7 @@ export default function Footer() {
           </a>
         </div>
         <div className="footer-bottom">
-          <span>© {new Date().getFullYear()} Iris Tarot Journal</span>
+          <span>© {new Date().getFullYear()} Iris Space</span>
           <p>以塔羅為靈感，記錄生活與自我探索。</p>
           <a href="/images/sources.json" target="_blank" rel="noopener noreferrer">
             PHOTOGRAPHY / UNSPLASH ↗

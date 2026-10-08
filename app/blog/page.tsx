@@ -3,7 +3,7 @@ import BlogCard from "../components/blog-card";
 import { blogPosts } from "../data/blog-posts";
 
 export const metadata: Metadata = {
-  title: "塔羅文章｜Iris Tarot Journal",
+  title: "塔羅文章｜Iris Space",
   description: "三篇關於每日一牌、溫柔提問與三張牌書寫練習的文章，陪你把塔羅帶進日常。",
 };
 

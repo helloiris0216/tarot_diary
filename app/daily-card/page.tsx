@@ -4,7 +4,7 @@ import Footer from "../components/footer";
 import DailyCardGame from "../components/daily-card-game";
 
 export const metadata: Metadata = {
-  title: "每日一卡｜Iris Tarot Journal",
+  title: "每日一卡｜Iris Space",
   description: "每天留一個安靜的片刻，抽出一張塔羅牌，閱讀今日的自我探索提示。",
 };
 

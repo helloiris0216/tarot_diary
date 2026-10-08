@@ -4,8 +4,8 @@ export default function Header() {
   return (
     <div className="masthead">
       <header className="site-header shell">
-        <Link className="wordmark" href="/" aria-label="Iris 塔羅牌日記首頁">
-          iris<span className="brand-dot">.</span>
+        <Link className="wordmark wordmark-space" href="/" aria-label="Iris Space 塔羅牌日記首頁">
+          Iris Space
           <span className="brand-caption">TAROT JOURNAL</span>
         </Link>
         <nav aria-label="主要導覽">

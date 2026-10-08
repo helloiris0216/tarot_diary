@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = blogPosts.find((item) => item.slug === slug);
   if (!post) notFound();
-  return { title: `${post.title}｜Iris Tarot Journal`, description: post.excerpt };
+  return { title: `${post.title}｜Iris Space`, description: post.excerpt };
 }
 
 export default async function ArticlePage({ params }: Props) {
@@ -25,7 +25,7 @@ export default async function ArticlePage({ params }: Props) {
     <article className="article-shell">
       <Link className="article-back" href="/blog">← 返回文章列表</Link>
       <header className="article-heading">
-        <p className="eyebrow">IRIS TAROT JOURNAL / {post.category}</p>
+        <p className="eyebrow">IRIS SPACE / {post.category}</p>
         <h1>{post.title}</h1>
         <p>{post.excerpt}</p>
       </header>

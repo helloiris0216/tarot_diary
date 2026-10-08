@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Iris Tarot Journal｜塔羅牌日記",
+  title: "Iris Space｜塔羅牌日記",
   description: "一本關於塔羅、直覺與生活的日記。從一張牌、一個問題開始，慢慢認識今天的自己。",
 };
 

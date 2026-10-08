@@ -78,7 +78,7 @@ export default function VisitorWelcome() {
     <>
       <div className="visitor-bar">
         <div className="shell visitor-bar-inner">
-          <p role="status"><span aria-hidden="true">✧</span> {name ? <>歡迎，<strong>{name}</strong>。留一點溫柔的時間給自己。</> : "歡迎來到 Iris，今天也好好陪伴自己。"}</p>
+          <p role="status"><span aria-hidden="true">✧</span> {name ? <>歡迎，<strong>{name}</strong>。留一點溫柔的時間給自己。</> : "歡迎來到 Iris Space，今天也好好陪伴自己。"}</p>
           <button ref={editRef} type="button" onClick={() => {
             setError("");
             if (inputRef.current) inputRef.current.value = name;

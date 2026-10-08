@@ -77,7 +77,7 @@ export default function DailyCardGame() {
       <div className="daily-card-stage">
         <div className={`daily-card ${card ? "is-revealed" : ""} ${animate ? "with-flip" : ""}`}>
           <div className="daily-card-face daily-card-back" aria-hidden={Boolean(card)}>
-            <p className="eyebrow">IRIS TAROT JOURNAL</p><span className="daily-card-mark" aria-hidden="true">✧</span><p className="daily-card-back-title">今日的你，<br />值得被好好聆聽。</p><span className="daily-card-caption">ONE CARD · ONE QUIET MOMENT</span>
+            <p className="eyebrow">IRIS SPACE</p><span className="daily-card-mark" aria-hidden="true">✧</span><p className="daily-card-back-title">今日的你，<br />值得被好好聆聽。</p><span className="daily-card-caption">ONE CARD · ONE QUIET MOMENT</span>
           </div>
           <div className="daily-card-face daily-card-front" aria-hidden={!card}>
             {card && <><span className="daily-card-number">{String(draw!.index).padStart(2, "0")}</span><span className="daily-card-mark" aria-hidden="true">✧</span><h2>{card.name}</h2><p className="daily-card-english">{card.english}</p><span className="daily-card-keyword">{card.keyword}</span></>}
