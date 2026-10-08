@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Header from "./components/header";
-import DailyCardCta from "./components/daily-card-cta";
-import Footer from "./components/footer";
-import Parallax from "./components/parallax";
+import Header from "@/app/components/header";
+import DailyCardCta from "@/app/components/daily-card-cta";
+import Footer from "@/app/components/footer";
+import Parallax from "@/app/components/parallax";
 import sources from "@/public/images/sources.json";
 
 const entries = [
