@@ -1,7 +1,10 @@
+import NewsletterSignup from "./newsletter-signup";
+
 export default function Footer() {
   return (
     <footer className="site-footer">
       <div className="shell">
+        <NewsletterSignup />
         <div className="footer-top">
           <a className="wordmark" href="#top" aria-label="回到塔羅牌日記頂端">
             iris<span className="brand-dot">.</span>
