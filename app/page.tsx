@@ -23,7 +23,7 @@ export default function Home() {
       <main id="main">
         <div className="night-section"><section className="hero shell" aria-labelledby="hero-title">
           <div className="hero-copy"><p className="eyebrow"><span className="status-dot" /> A QUIET MOMENT, JUST FOR YOU.</p>
-            <h1 id="hero-title">翻開100張牌，<br />也翻開<span className="serif-emphasis">今天的自己。</span></h1>
+            <h1 id="hero-title">翻開一張牌，<br />也翻開<span className="serif-emphasis">今天的自己。</span></h1>
             <p className="hero-description">一本關於塔羅、直覺與生活的日記。<br />把匆忙放在一旁，留一點時間，聽聽心裡的聲音。</p>
             <a className="button" href="#notes">開始今天的練習 <span aria-hidden="true">↗</span></a>
             <div className="hero-footnote"><span>THE ART OF LOOKING INWARD</span><span>塔羅・書寫・日常</span></div>
